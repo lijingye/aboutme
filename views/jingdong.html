@@ -1,0 +1,3903 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<link href="../css/index.css" rel="stylesheet" type="text/css">
+<script src="../js/index.js"></script>
+<script src="../js/hxsd_tools.js"></script>
+<script src="../js/jquery-3.1.0.js"></script>
+<script src="../js/jquery.color.js"></script>
+<script src="../js/jquery.js"></script>
+    <script>
+        $(function(){
+            $(".sub").on("click",function(){
+                //获取用户输入的关键字
+                var keyword=$("input[name='keyword']").val();
+                //动态构建请求的url(接口)：
+                window.location.href="search.html#"+keyword;
+
+            })
+        })
+
+    </script>
+</head>
+
+<body>
+<div class="header">
+  <div class="top">
+    <div class="top_inner">
+      <div class="diqu">送至：北京</div>
+      <ul class="menu">
+        <li><a href="#">你好，请登录</a><a class="mian" href="#">免费注册</a></li>
+        <li class="line"></li>
+        <li><a href="#">我的订单</a></li>
+        <li class="line"></li>
+        <li><a href="#" class="bg">我的京东<i>◇</i></a></li>
+        <li class="line"></li>
+        <li><a href="#">京东会员</a></li>
+        <li class="line"></li>
+        <li><a href="#">企业采购</a></li>
+        <li class="line"></li>
+        <li><a href="#" class="bg"><span></span>手机京东<i>◇</i></a></li>
+        <li class="line"></li>
+        <li><a href="#" class="bg">关注京东<i>◇</i></a></li>
+        <li class="line"></li>
+        <li><a href="#" class="bg" id="bg">客户服务<i>◇</i></a></li>
+        <li class="line" ></li>
+        <li><a href="#" class="bg">网站导航<i>◇</i></a></li>
+      </ul>
+        <ul class="dropdown-menu" style="display: none">
+            <li><a href="#">帮助中心</a></li>
+            <li><a href="#">售后服务</a></li>
+            <li><a href="京东在线客服.html" target="_blank">在线咨询</a></li>
+            <li><a href="#">意见建议</a></li>
+            <li><a href="#">电话客服</a></li>
+            <li><a href="#">客服邮箱</a></li>
+        </ul>
+    </div>
+  </div>
+  <div class="mid clearfix">
+   <div class="logo"><a href="#"><img src="../images/logo-201305.png"></a></div>
+   <div class="search">
+   <form>
+       <input type="text" placeholder="卡通手机壳" class="sea" name="keyword"><input type="button"  value="搜索" class="sub">
+   </form>
+   <div class="tags"><a href="#" class="active">巧克力9.9</a><a href="#">5折限量</a><a href="#">大闸蟹</a><a href="#">中兴A1直降</a><a href="#">1元拿走</a><a href="#">玩具女孩</a><a href="#">儿童运动鞋</a><a href="#">小米电脑</a><a href="#">登山鞋</a></div>
+   </div>
+   <div class="buy">
+   <a href="#">我的购物车</a>
+   <i>></i>
+   <div class="number">0</div>
+   </div>
+  </div>
+  <div class="bot clearfix">
+   <div class="list">全部商品分类</div>
+   <ul>
+    <li><a href="#">服装城</a></li>
+    <li><a href="#">美妆馆</a></li>
+    <li><a href="#">京东超市</a></li>
+    <li><a href="#">生鲜</a></li>
+    <li><a href="#">全球购</a></li>
+    <li><a href="#">闪购</a></li>
+    <li><a href="#">团购</a></li>
+    <li><a href="#">拍卖</a></li>
+    <li><a href="#">金融</a></li>
+   </ul>
+  </div>
+</div>
+<div class="page1">
+  <div class="inner">
+     <div class="con1">
+    
+     <div class="warps">
+    <div class="nav_list">
+      <ul id="list">
+      <li data-index="1"><h3><a href="#">家用电器</a></h3><i>></i></li>
+      <li data-index="2"><h3><a href="#">手机</a>、<a href="#">数码</a>、<a href="#">京东通信</a></h3><i>></i></li>
+      <li data-index="3"><h3><a href="#">电脑</a>、<a href="#">办公</a></h3><i>></i></li>
+      <li data-index="4"><h3><a href="#">家居</a>、<a href="#">家具</a>、<a href="#">家装</a>、<a href="#">厨具</a></h3><i>></i></li>
+      <li data-index="5"><h3><a href="#">男装</a>、<a href="#">女装</a>、<a href="#">童装</a>、<a href="#">内衣</a></h3><i>></i></li>
+      <li data-index="6"><h3><a href="#">个护化妆</a>、<a href="#">清洁用品</a>、<a href="#">宠物</a></h3><i>></i></li>
+      <li data-index="7"><h3><a href="#">鞋靴</a>、<a href="#">箱包</a>、<a href="#">珠宝</a>、<a href="#">奢侈品</a></h3><i>></i></li>
+      <li data-index="8"><h3><a href="#">运动户外</a>、<a href="#">钟表</a></h3><i>></i></li>
+      <li data-index="9"><h3><a href="#">汽车</a>、<a href="#">汽车用品</a></h3><i>></i></li>
+      <li data-index="10"><h3><a href="#">母婴</a>、<a href="#">玩具乐器</a></h3><i>></i></li>
+      <li data-index="11"><h3><a href="#">食品</a>、<a href="#">酒类</a>、<a href="#">生鲜</a>、<a href="#">特产</a></h3><i>></i></li>
+      <li data-index="12"><h3><a href="#">医药保健</a></h3><i>></i></li>
+      <li data-index="13"><h3><a href="#">图书</a>、<a href="#">音像</a>、<a href="#">电子书</a></h3><i>></i></li>
+      <li data-index="14"><h3><a href="#">彩票</a>、<a href="#">旅行</a>、<a href="#">充值</a>、<a href="#">票务</a></h3><i>></i></li>
+      <li data-index="15"><h3><a href="#">理财</a>、<a href="#">众筹</a>、<a href="#">白条</a>、<a href="#">保险</a></h3><i>></i></li>
+      </ul>
+    </div>
+       <div class="popup" style="display:none">
+        <div class="section" id="cate_item1">
+          <div class="left">
+           <div class="brand clearfix">
+            <a href="#" class="active">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           
+           
+           
+           
+          </div>
+          <div class="right">
+           <div class="trademark clearfix">
+           <ul>
+           <li><a href="#"><img src="../images/picture_03.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_05.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_09.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_10.jpg"></a></li>
+           <li><a href="#"><img src="../images/572c0d37N055188f0.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_13.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_15.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_16.jpg"></a></li>
+           </ul>
+           </div>
+           <div class="tv">
+             <a href="#"><img src="../images/picture_20.jpg"></a>
+             <a href="#"><img src="../images/picture_22.jpg"></a>
+           </div>
+          </div>
+        </div>
+        <div class="section" id="cate_item2">
+          <div class="left">
+           <div class="brand clearfix">
+            <a href="#" class="active">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           
+           
+           
+           
+          </div>
+          <div class="right">
+           <div class="trademark clearfix">
+           <ul>
+           <li><a href="#"><img src="../images/picture_03.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_05.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_09.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_10.jpg"></a></li>
+           <li><a href="#"><img src="../images/572c0d37N055188f0.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_13.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_15.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_16.jpg"></a></li>
+           </ul>
+           </div>
+           <div class="tv">
+             <a href="#"><img src="../images/picture_20.jpg"></a>
+             <a href="#"><img src="../images/picture_22.jpg"></a>
+           </div>
+          </div>
+        </div>
+        <div class="section" id="cate_item3">
+          <div class="left">
+           <div class="brand clearfix">
+            <a href="#" class="active">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           
+           
+           
+           
+          </div>
+          <div class="right">
+           <div class="trademark clearfix">
+           <ul>
+           <li><a href="#"><img src="../images/picture_03.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_05.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_09.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_10.jpg"></a></li>
+           <li><a href="#"><img src="../images/572c0d37N055188f0.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_13.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_15.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_16.jpg"></a></li>
+           </ul>
+           </div>
+           <div class="tv">
+             <a href="#"><img src="../images/picture_20.jpg"></a>
+             <a href="#"><img src="../images/picture_22.jpg"></a>
+           </div>
+          </div>
+        </div>
+        <div class="section" id="cate_item4">
+          <div class="left">
+           <div class="brand clearfix">
+            <a href="#" class="active">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           
+           
+           
+           
+          </div>
+          <div class="right">
+           <div class="trademark clearfix">
+           <ul>
+           <li><a href="#"><img src="../images/picture_03.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_05.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_09.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_10.jpg"></a></li>
+           <li><a href="#"><img src="../images/572c0d37N055188f0.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_13.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_15.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_16.jpg"></a></li>
+           </ul>
+           </div>
+           <div class="tv">
+             <a href="#"><img src="../images/picture_20.jpg"></a>
+             <a href="#"><img src="../images/picture_22.jpg"></a>
+           </div>
+          </div>
+        </div>
+        <div class="section" id="cate_item5">
+          <div class="left">
+           <div class="brand clearfix">
+            <a href="#" class="active">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           
+           
+           
+           
+          </div>
+          <div class="right">
+           <div class="trademark clearfix">
+           <ul>
+           <li><a href="#"><img src="../images/picture_03.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_05.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_09.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_10.jpg"></a></li>
+           <li><a href="#"><img src="../images/572c0d37N055188f0.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_13.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_15.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_16.jpg"></a></li>
+           </ul>
+           </div>
+           <div class="tv">
+             <a href="#"><img src="../images/picture_20.jpg"></a>
+             <a href="#"><img src="../images/picture_22.jpg"></a>
+           </div>
+          </div>
+        </div>
+        <div class="section" id="cate_item6">
+          <div class="left">
+           <div class="brand clearfix">
+            <a href="#" class="active">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           
+           
+           
+           
+          </div>
+          <div class="right">
+           <div class="trademark clearfix">
+           <ul>
+           <li><a href="#"><img src="../images/picture_03.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_05.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_09.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_10.jpg"></a></li>
+           <li><a href="#"><img src="../images/572c0d37N055188f0.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_13.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_15.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_16.jpg"></a></li>
+           </ul>
+           </div>
+           <div class="tv">
+             <a href="#"><img src="../images/picture_20.jpg"></a>
+             <a href="#"><img src="../images/picture_22.jpg"></a>
+           </div>
+          </div>
+        </div>
+        <div class="section" id="cate_item7">
+          <div class="left">
+           <div class="brand clearfix">
+            <a href="#" class="active">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           
+           
+           
+           
+          </div>
+          <div class="right">
+           <div class="trademark clearfix">
+           <ul>
+           <li><a href="#"><img src="../images/picture_03.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_05.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_09.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_10.jpg"></a></li>
+           <li><a href="#"><img src="../images/572c0d37N055188f0.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_13.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_15.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_16.jpg"></a></li>
+           </ul>
+           </div>
+           <div class="tv">
+             <a href="#"><img src="../images/picture_20.jpg"></a>
+             <a href="#"><img src="../images/picture_22.jpg"></a>
+           </div>
+          </div>
+        </div>
+        <div class="section" id="cate_item8">
+          <div class="left">
+           <div class="brand clearfix">
+            <a href="#" class="active">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           
+           
+           
+           
+          </div>
+          <div class="right">
+           <div class="trademark clearfix">
+           <ul>
+           <li><a href="#"><img src="../images/picture_03.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_05.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_09.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_10.jpg"></a></li>
+           <li><a href="#"><img src="../images/572c0d37N055188f0.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_13.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_15.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_16.jpg"></a></li>
+           </ul>
+           </div>
+           <div class="tv">
+             <a href="#"><img src="../images/picture_20.jpg"></a>
+             <a href="#"><img src="../images/picture_22.jpg"></a>
+           </div>
+          </div>
+        </div>
+        <div class="section" id="cate_item9">
+          <div class="left">
+           <div class="brand clearfix">
+            <a href="#" class="active">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           
+           
+           
+           
+          </div>
+          <div class="right">
+           <div class="trademark clearfix">
+           <ul>
+           <li><a href="#"><img src="../images/picture_03.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_05.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_09.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_10.jpg"></a></li>
+           <li><a href="#"><img src="../images/572c0d37N055188f0.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_13.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_15.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_16.jpg"></a></li>
+           </ul>
+           </div>
+           <div class="tv">
+             <a href="#"><img src="../images/picture_20.jpg"></a>
+             <a href="#"><img src="../images/picture_22.jpg"></a>
+           </div>
+          </div>
+        </div>
+        <div class="section" id="cate_item10">
+          <div class="left">
+           <div class="brand clearfix">
+            <a href="#" class="active">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           
+           
+           
+           
+          </div>
+          <div class="right">
+           <div class="trademark clearfix">
+           <ul>
+           <li><a href="#"><img src="../images/picture_03.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_05.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_09.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_10.jpg"></a></li>
+           <li><a href="#"><img src="../images/572c0d37N055188f0.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_13.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_15.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_16.jpg"></a></li>
+           </ul>
+           </div>
+           <div class="tv">
+             <a href="#"><img src="../images/picture_20.jpg"></a>
+             <a href="#"><img src="../images/picture_22.jpg"></a>
+           </div>
+          </div>
+        </div>
+        <div class="section" id="cate_item11">
+          <div class="left">
+           <div class="brand clearfix">
+            <a href="#" class="active">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           
+           
+           
+           
+          </div>
+          <div class="right">
+           <div class="trademark clearfix">
+           <ul>
+           <li><a href="#"><img src="../images/picture_03.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_05.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_09.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_10.jpg"></a></li>
+           <li><a href="#"><img src="../images/572c0d37N055188f0.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_13.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_15.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_16.jpg"></a></li>
+           </ul>
+           </div>
+           <div class="tv">
+             <a href="#"><img src="../images/picture_20.jpg"></a>
+             <a href="#"><img src="../images/picture_22.jpg"></a>
+           </div>
+          </div>
+        </div>
+        <div class="section" id="cate_item12">
+          <div class="left">
+           <div class="brand clearfix">
+            <a href="#" class="active">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           
+           
+           
+           
+          </div>
+          <div class="right">
+           <div class="trademark clearfix">
+           <ul>
+           <li><a href="#"><img src="../images/picture_03.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_05.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_09.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_10.jpg"></a></li>
+           <li><a href="#"><img src="../images/572c0d37N055188f0.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_13.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_15.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_16.jpg"></a></li>
+           </ul>
+           </div>
+           <div class="tv">
+             <a href="#"><img src="../images/picture_20.jpg"></a>
+             <a href="#"><img src="../images/picture_22.jpg"></a>
+           </div>
+          </div>
+        </div>
+        <div class="section" id="cate_item13">
+          <div class="left">
+           <div class="brand clearfix">
+            <a href="#" class="active">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           
+           
+           
+           
+          </div>
+          <div class="right">
+           <div class="trademark clearfix">
+           <ul>
+           <li><a href="#"><img src="../images/picture_03.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_05.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_09.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_10.jpg"></a></li>
+           <li><a href="#"><img src="../images/572c0d37N055188f0.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_13.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_15.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_16.jpg"></a></li>
+           </ul>
+           </div>
+           <div class="tv">
+             <a href="#"><img src="../images/picture_20.jpg"></a>
+             <a href="#"><img src="../images/picture_22.jpg"></a>
+           </div>
+          </div>
+        </div>
+        <div class="section" id="cate_item14">
+          <div class="left">
+           <div class="brand clearfix">
+            <a href="#" class="active">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           
+           
+           
+           
+          </div>
+          <div class="right">
+           <div class="trademark clearfix">
+           <ul>
+           <li><a href="#"><img src="../images/picture_03.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_05.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_09.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_10.jpg"></a></li>
+           <li><a href="#"><img src="../images/572c0d37N055188f0.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_13.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_15.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_16.jpg"></a></li>
+           </ul>
+           </div>
+           <div class="tv">
+             <a href="#"><img src="../images/picture_20.jpg"></a>
+             <a href="#"><img src="../images/picture_22.jpg"></a>
+           </div>
+          </div>
+        </div>
+        <div class="section" id="cate_item15">
+          <div class="left">
+           <div class="brand clearfix">
+            <a href="#" class="active">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+            <a href="#">家电狂欢<i>></i></a>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           <div class="menu">
+            <dl class="clearfix">
+             <dt><a href="#">大家电<i>></i></a></dt>
+             <dd><a href="#"><img src="../images/573d8dd9N215dc6c9.jpg"></a>
+                <a href="#">平板电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">家庭影院</a>
+                <a href="#">DVD</a>
+                <a href="#">迷你音响</a>
+                <a href="#">冷柜/冰吧</a>
+                <a href="#">酒柜</a>
+                <a href="#">家电配件</a>
+             </dd>
+            </dl>
+           </div>
+           
+           
+           
+           
+          </div>
+          <div class="right">
+           <div class="trademark clearfix">
+           <ul>
+           <li><a href="#"><img src="../images/picture_03.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_05.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_09.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_10.jpg"></a></li>
+           <li><a href="#"><img src="../images/572c0d37N055188f0.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_13.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_15.jpg"></a></li>
+           <li><a href="#"><img src="../images/picture_16.jpg"></a></li>
+           </ul>
+           </div>
+           <div class="tv">
+             <a href="#"><img src="../images/picture_20.jpg"></a>
+             <a href="#"><img src="../images/picture_22.jpg"></a>
+           </div>
+          </div>
+        </div>
+        
+        
+        
+       </div>
+    </div>
+    <div class="banner" id="banner">
+    <ul id="banner-pic">
+        <li><a href="#"><img src="../images/banner_01..jpg"></a></li>
+        <li ><a href="#"><img src="../images/banner_02.jpg"></a></li>
+        <li ><a href="#"><img src="../images/banner_03.jpg"></a></li>
+        <li ><a href="#"><img src="../images/banner_04.jpg"></a></li>
+        <li ><a href="#"><img src="../images/banner_05.jpg"></a></li>
+
+    </ul>
+    <ol id="banner-nav">
+    </ol>
+    <a href="javascript:;" class="prevBtn">&laquo;</a>
+    <a href="javascript:;" class="nextBtn">&raquo;</a>
+    </div>
+    <div class="text">
+     <div class="news">
+      <div class="title">
+      <h3>京东快报</h3><a href="#">更多 ></a></div>
+      <ul>
+      <li><span>[特惠]</span>【七夕特价】好礼低至9.9元！</li>
+      <li><span>[公告]</span>广东福建因台风影响配送延迟</li>
+      <li><span>[公告]</span>广东福建因台风影响配送延迟</li>
+      <li><span>[公告]</span>广东福建因台风影响配送延迟</li>
+      <li><span>[公告]</span>广东福建因台风影响配送延迟</li>
+      </ul>
+     </div>
+     <div class="icon">
+      <ul>
+       <li><a href="#"><i></i><span>话费</span></a></li>
+       <li><a href="#"><i class="er"></i><span>机票</span></a></li>
+       <li><a href="#"><i class="san"></i><span>电影票</span></a></li>
+       <li><a href="#"><i class="si"></i><span>游戏</span></a></li>
+       <li><a href="#"><i class="wu"></i><span>彩票</span></a></li>
+       <li><a href="#"><i class="liu"></i><span>加油卡</span></a></li>
+       <li><a href="#"><i class="qi"></i><span>酒店</span></a></li>
+       <li><a href="#"><i class="ba"></i><span>火车票</span></a></li>
+       <li><a href="#"><i class="jiu"></i><span>理财</span></a></li>
+       <li><a href="#"><i class="shi"></i><span>白条</span></a></li>
+       <li><a href="#"><i class="shiyi"></i><span>众筹</span></a></li>
+       <li><a href="#"><i class="shier"></i><span>礼品卡</span></a></li>
+      </ul>
+     </div>
+     <div class="pic"><a href="#"><img src="../images/577cd92fN2de2d25a.jpg"></a></div>
+    </div>
+    </div>
+    <div class="con2 clearfix">
+    
+     <i></i>
+      <ul>
+      <li><a href="#"><img src="../images/57d906a2N0bfd4a5e.jpg"></a></li>
+      <li><a href="#"><img src="../images/57e3807cN9b15aa82.jpg"></a></li>
+      <li><a href="#"><img src="../images/5620506fNd536f2d9.jpg"></a></li>
+      <li><a href="#"><img src="../images/pic_09.jpg"></a></li>
+     </ul>
+    </div>
+  </div>
+</div>
+<div class="page2">
+ <div class="title">
+   <div class="left">
+ 猜你喜欢<i></i></div>
+   <div class="right">
+ 换一批</div>
+ 
+ </div>
+ <div class="con">
+   <i></i>
+   <ul>
+   <li>
+   <img src="../images/567a72d0N4dd9e95b.jpg">
+   <div class="text">
+   <p>联想（Lenovo)小新<br>310经典版 14英寸超薄</p>
+   <span>¥4399.00</span>
+   </div>
+   </li>
+     <li>
+   <img src="../images/56cae760N96174218.jpg">
+   <div class="text">
+   <p>联想（Lenovo)小新<br>310经典版 14英寸超薄</p>
+   <span>¥4399.00</span>
+   </div>
+   </li>
+   <li>
+   <img src="../images/575e22dcNb86cf105.jpg">
+   <div class="text">
+   <p>联想（Lenovo)小新<br>310经典版 14英寸超薄</p>
+   <span>¥4399.00</span>
+   </div>
+   </li>
+   <li>
+   <img src="../images/579c2b0eN4265046f.jpg">
+   <div class="text">
+   <p>联想（Lenovo)小新<br>310经典版 14英寸超薄</p>
+   <span>¥4399.00</span>
+   </div>
+   </li>
+   <li>
+   <img src="../images/579af53bN14c474e6.jpg">
+   <div class="text">
+   <p>联想（Lenovo)小新<br>310经典版 14英寸超薄</p>
+   <span>¥4399.00</span>
+   </div>
+   </li>
+   <li>
+   <img src="../images/564308c4N4abccb07.jpg">
+   <div class="text active">
+   <p>联想（Lenovo)小新<br>310经典版 14英寸超薄</p>
+   <span>¥4399.00</span>
+   </div>
+   </li>
+
+   </ul>
+ </div>
+</div>
+<div class="page3">
+	<h3>京东·品质生活</h3>
+    <div class="con">
+    	<div class="left">
+       	  <div class="top">
+                    	<a href="#">
+                	<h4>新发现</h4>
+            	<div class="pic"><img src="../images/57eb21eaNf3d9137e.jpg"></div>
+
+                	<div class="font">
+                   	  <h4>索尼PS VR</h4>
+                        <p>限时抢购</p>
+                        <span>给你现实的临场感</span>
+                    </div>
+                </a>
+            </div>
+            <div class="bot">
+            <div class="l_pic">
+                   <a href="#"><img src="../images/57e9c732N0cc5d00a.jpg">
+                    <div class="font">
+                   	  <h4>索尼PS VR</h4>
+                        <p>限时抢购</p>
+                        <span>给你现实的临场感</span>
+                    </div>
+              </a> 
+            </div>
+            <div class="r_pic">
+                    <a href="#"><img src="../images/577b75faNb5780d1c.jpg">
+                    <div class="font">
+                   	  <h4>索尼PS VR</h4>
+                        <p>限时抢购</p>
+                        <span>给你现实的临场感</span>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cen">
+       	  <div class="top">
+                    	<a href="#">
+                	<h4>好东西</h4>
+            	<div class="pic"><img src="../images/57cf7e31N2474ce30.jpg"></div>
+
+                	<div class="font">
+                   	  <h4>索尼PS VR</h4>
+                        <p>限时抢购</p>
+                        <span>给你现实的临场感</span>
+                    </div>
+                </a>
+            </div>
+       	  <div class="top active">
+                    	<a href="#">
+            	<div class="pic"><img src="../images/57d652ebNaf14d666.jpg"></div>
+
+                	<div class="font">
+                   	  <h4>索尼PS VR</h4>
+                        <p>限时抢购</p>
+                        <span>给你现实的临场感</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    	<div class="left">
+       	  <div class="top">
+            	<a href="">
+                	<h4>新发现</h4>
+                    <div class="pic"><img src="../images/577c67c9Nefee4677.jpg"></div>
+                    <div class="font">
+                    	<h4>索尼PS VR</h4>
+                        <p>限时抢购</p>
+                        <span>给你现实的临场感</span>
+                    </div>
+                </a>
+            </div>
+                     <div class="bot">
+            <div class="l_pic">
+                    <img src="../images/579fff76N58a6e459.jpg">
+                    <div class="font">
+                   	  <h4>索尼PS VR</h4>
+                        <p>限时抢购</p>
+                        <span>给你现实的临场感</span>
+                    </div>
+            </div>
+            <div class="r_pic">
+                    <img src="../images/577b75faNb5780d1c.jpg">
+                    <div class="font">
+                   	  <h4>索尼PS VR</h4>
+                        <p>限时抢购</p>
+                        <span>给你现实的临场感</span>
+              </div>
+            </div>
+            </div>
+
+      </div>
+        <div class="last">
+        	<div class="l_icon">
+            	<ul>
+                	<li><a href="#"><img src="../images/5786128bN6232ac1b.jpg"></a></li>
+                	<li><a href="#"><img src="../images/56b17227N33396de6.jpg"></a></li>
+                	<li><a href="#"><img src="../images/56fe1ec7N0c3302e2.jpg"></a></li>
+                	<li><a href="#"><img src="../images/56b2f385N8e4eb051.jpg"></a></li>
+                	<li><a href="#"><img src="../images/5786128bN6232ac1b.jpg"></a></li>
+                	<li><a href="#"><img src="../images/56a5cd77N8d890c92.jpg"></a></li>
+                	<li><a href="#"><img src="../images/5786128bN6232ac1b.jpg"></a></li>
+                </ul>
+            </div>
+            <div class="l_icon r_icon">
+            	<ul>
+                	<li><a href="#"><img src="../images/5786128bN6232ac1b.jpg"></a></li>
+                	<li><a href="#"><img src="../images/56b17227N33396de6.jpg"></a></li>
+                	<li><a href="#"><img src="../images/56fe1ec7N0c3302e2.jpg"></a></li>
+                	<li><a href="#"><img src="../images/56b2f385N8e4eb051.jpg"></a></li>
+                	<li><a href="#"><img src="../images/5786128bN6232ac1b.jpg"></a></li>
+                	<li><a href="#"><img src="../images/56a5cd77N8d890c92.jpg"></a></li>
+                	<li><a href="#"><img src="../images/5786128bN6232ac1b.jpg"></a></li>
+                </ul>
+            </div>   
+        </div>
+    </div>
+</div>
+
+<div class="advertise">
+<a href="#"><img src="../images/57e4f6d6N168cbbcf.jpg"></a>
+<a href="#"><img src="../images/57e50240Ne2bc2dac.jpg"></a>
+<a href="#"><img src="../images/57e260b8N8ab440bd.jpg"></a>
+</div>
+<div class="page4" id="1F">
+<div class="title  clearfix">
+ <span>1F</span><h2>服装鞋包</h2>
+ <ul class="nav"  id="nav">
+  <li class="active"><a href="#">大牌</a><i></i></li>
+  <li><a href="#">男装</a><i></i></li>
+  <li><a href="#">女装</a><i></i></li>
+  <li><a href="#">鞋靴</a><i></i></li>
+  <li><a href="#">箱包</a><i></i></li>
+  <li><a href="#">内衣配饰</a><i></i></li>
+  <li><a href="#">珠宝首饰</a><i></i></li>
+  <li><a href="#">奢品礼品</a><i></i></li>
+  <li><a href="#">奢华腕表</a></li>
+ </ul>
+</div>
+<div class="con">
+  <div class="left  clearfix">
+    <div class="pic"><a href="#"><img src="../images/577926adNe7149a93.jpg"></a></div>
+    <div class="nav1">
+      <ul>
+      <li><a href="#">男装</a></li>
+      <li><a href="#">女装</a></li>
+      <li><a href="#">内衣</a></li>
+      <li><a href="#">鞋靴</a></li>
+      <li><a href="#">箱包</a></li>
+      <li><a href="#">奢侈品</a></li>
+      </ul>
+    
+    </div>
+    <div class="nav2">
+      <ul class="one">
+       <li><a href="#"><span>潮流女装</span> 太阳镜</a></li>
+       <li><a href="#">潮流女装</a>     
+           <a href="#">太阳镜</a></li>
+       <li><a href="#">潮流女装 太阳镜</a></li>
+       <li><a href="#">潮流女装 太阳镜</a></li>
+      </ul>
+      <ul class="two">
+       <li><a href="#">潮流女装 太阳镜</a></li>
+       <li><a href="#">潮流女装 太阳镜</a></li>
+       <li><a href="#">潮流女装 太阳镜</a></li>
+       <li><a href="#">潮流女装 太阳镜</a></li>
+      </ul>
+    
+    
+    
+    </div>
+    <div class="last"><a href="#"><img src="../images/picc_03.jpg"></a></div>
+  
+  </div>
+    <ul class="change">
+        <li class="change_con">
+  <div class="mid  clearfix">
+    <a href="#"><img src="../images/57e87700N7a387688.jpg"></a>
+    <a href="#"><img src="../images/57e7e73aN8501982a.jpg"></a>
+    <a href="#"><img src="../images/57e7e70aNe4bc4fac.jpg"></a>
+  </div>
+  <div  class="right  clearfix">
+     <div class="yi">
+  <a href="#"><img src="../images/57e7e639N1cf6c0ef.jpg"></a>
+  <a href="#"><img src="../images/57e7e679Na5fe891e.jpg"></a>
+  <a href="#"><img src="../images/57e7e648Nd257bf7b.jpg"></a>
+  <a href="#"><img src="../images/57e7e689N317a84bf.jpg"></a>
+  </div>
+  <div class="er">
+  <a href="#"><img src="../images/57e7e659Nc723f4a2.jpg"></a>
+  <a href="#"><img src="../images/57e7e669Nf7701785.jpg"></a>
+  <a href="#"><img src="../images/57e8884aN4d87d6bc.jpg"></a>
+  </div>
+  </div>
+        </li>
+        <li class="change_con hide">
+            <div class="mid  clearfix">
+                <a href="#"><img src="../images/57e87700N7a387688.jpg"></a>
+                <a href="#"><img src="../images/57e7e73aN8501982a.jpg"></a>
+                <a href="#"><img src="../images/57e7e70aNe4bc4fac.jpg"></a>
+            </div>
+            <div  class="right  clearfix">
+                <div class="yi">
+                    <a href="#"><img src="../images/57e7e648Nd257bf7b.jpg"></a>
+                    <a href="#"><img src="../images/57e7e689N317a84bf.jpg"></a>
+                    <a href="#"><img src="../images/57e7e639N1cf6c0ef.jpg"></a>
+                    <a href="#"><img src="../images/57e7e679Na5fe891e.jpg"></a>
+                </div>
+                <div class="er">
+                    <a href="#"><img src="../images/57e7e669Nf7701785.jpg"></a>
+                    <a href="#"><img src="../images/57e7e659Nc723f4a2.jpg"></a>
+                    <a href="#"><img src="../images/57e8884aN4d87d6bc.jpg"></a>
+                </div>
+            </div>
+        </li>    
+        <li class="change_con hide">
+            <div class="mid  clearfix">
+                <a href="#"><img src="../images/57e87700N7a387688.jpg"></a>
+                <a href="#"><img src="../images/57e7e73aN8501982a.jpg"></a>
+                <a href="#"><img src="../images/57e7e70aNe4bc4fac.jpg"></a>
+            </div>
+            <div  class="right  clearfix">
+                <div class="yi">
+                    <a href="#"><img src="../images/57e7e648Nd257bf7b.jpg"></a>
+                    <a href="#"><img src="../images/57e7e689N317a84bf.jpg"></a>
+                    <a href="#"><img src="../images/57e7e639N1cf6c0ef.jpg"></a>
+                    <a href="#"><img src="../images/57e7e679Na5fe891e.jpg"></a>
+                </div>
+                <div class="er">
+                    <a href="#"><img src="../images/57e7e669Nf7701785.jpg"></a>
+                    <a href="#"><img src="../images/57e7e659Nc723f4a2.jpg"></a>
+                    <a href="#"><img src="../images/57e8884aN4d87d6bc.jpg"></a>
+                </div>
+            </div>
+        </li>    
+        <li class="change_con hide">
+        <div class="mid  clearfix">
+            <a href="#"><img src="../images/57e87700N7a387688.jpg"></a>
+            <a href="#"><img src="../images/57e7e73aN8501982a.jpg"></a>
+            <a href="#"><img src="../images/57e7e70aNe4bc4fac.jpg"></a>
+        </div>
+        <div  class="right  clearfix">
+            <div class="yi">
+                <a href="#"><img src="../images/57e7e679Na5fe891e.jpg"></a>
+                <a href="#"><img src="../images/57e7e689N317a84bf.jpg"></a>
+                <a href="#"><img src="../images/57e7e639N1cf6c0ef.jpg"></a>
+                <a href="#"><img src="../images/57e7e648Nd257bf7b.jpg"></a>
+            </div>
+            <div class="er">
+                <a href="#"><img src="../images/57e7e669Nf7701785.jpg"></a>
+                <a href="#"><img src="../images/57e7e659Nc723f4a2.jpg"></a>
+                <a href="#"><img src="../images/57e8884aN4d87d6bc.jpg"></a>
+            </div>
+        </div>
+    </li>
+        <li class="change_con hide">
+            <div class="mid  clearfix">
+                <a href="#"><img src="../images/57e87700N7a387688.jpg"></a>
+                <a href="#"><img src="../images/57e7e73aN8501982a.jpg"></a>
+                <a href="#"><img src="../images/57e7e70aNe4bc4fac.jpg"></a>
+            </div>
+            <div  class="right  clearfix">
+                <div class="yi">
+                    <a href="#"><img src="../images/57e7e648Nd257bf7b.jpg"></a>
+                    <a href="#"><img src="../images/57e7e689N317a84bf.jpg"></a>
+                    <a href="#"><img src="../images/57e7e639N1cf6c0ef.jpg"></a>
+                    <a href="#"><img src="../images/57e7e679Na5fe891e.jpg"></a>
+                </div>
+                <div class="er">
+                    <a href="#"><img src="../images/57e7e669Nf7701785.jpg"></a>
+                    <a href="#"><img src="../images/57e7e659Nc723f4a2.jpg"></a>
+                    <a href="#"><img src="../images/57e8884aN4d87d6bc.jpg"></a>
+                </div>
+            </div>
+    </li>
+        <li class="change_con hide">
+        <div class="mid  clearfix">
+            <a href="#"><img src="../images/57e87700N7a387688.jpg"></a>
+            <a href="#"><img src="../images/57e7e73aN8501982a.jpg"></a>
+            <a href="#"><img src="../images/57e7e70aNe4bc4fac.jpg"></a>
+        </div>
+        <div  class="right  clearfix">
+            <div class="yi">
+                <a href="#"><img src="../images/57e7e648Nd257bf7b.jpg"></a>
+                <a href="#"><img src="../images/57e7e679Na5fe891e.jpg"></a>
+                <a href="#"><img src="../images/57e7e639N1cf6c0ef.jpg"></a>
+                <a href="#"><img src="../images/57e7e689N317a84bf.jpg"></a>
+            </div>
+            <div class="er">
+                <a href="#"><img src="../images/57e7e669Nf7701785.jpg"></a>
+                <a href="#"><img src="../images/57e7e659Nc723f4a2.jpg"></a>
+                <a href="#"><img src="../images/57e8884aN4d87d6bc.jpg"></a>
+            </div>
+        </div>
+    </li>
+        <li class="change_con hide">
+            <div class="mid  clearfix">
+                <a href="#"><img src="../images/57e87700N7a387688.jpg"></a>
+                <a href="#"><img src="../images/57e7e73aN8501982a.jpg"></a>
+                <a href="#"><img src="../images/57e7e70aNe4bc4fac.jpg"></a>
+            </div>
+            <div  class="right  clearfix">
+                <div class="yi">
+                    <a href="#"><img src="../images/57e7e648Nd257bf7b.jpg"></a>
+                    <a href="#"><img src="../images/57e7e689N317a84bf.jpg"></a>
+                    <a href="#"><img src="../images/57e7e639N1cf6c0ef.jpg"></a>
+                    <a href="#"><img src="../images/57e7e679Na5fe891e.jpg"></a>
+                </div>
+                <div class="er">
+                    <a href="#"><img src="../images/57e7e659Nc723f4a2.jpg"></a>
+                    <a href="#"><img src="../images/57e7e669Nf7701785.jpg"></a>
+                    <a href="#"><img src="../images/57e8884aN4d87d6bc.jpg"></a>
+                </div>
+            </div>
+    </li>
+        <li class="change_con hide">
+            <div class="mid  clearfix">
+                <a href="#"><img src="../images/57e87700N7a387688.jpg"></a>
+                <a href="#"><img src="../images/57e7e73aN8501982a.jpg"></a>
+                <a href="#"><img src="../images/57e7e70aNe4bc4fac.jpg"></a>
+            </div>
+            <div  class="right  clearfix">
+                <div class="yi">
+                    <a href="#"><img src="../images/57e7e648Nd257bf7b.jpg"></a>
+                    <a href="#"><img src="../images/57e7e639N1cf6c0ef.jpg"></a>
+                    <a href="#"><img src="../images/57e7e689N317a84bf.jpg"></a>
+                    <a href="#"><img src="../images/57e7e679Na5fe891e.jpg"></a>
+                </div>
+                <div class="er">
+                    <a href="#"><img src="../images/57e7e669Nf7701785.jpg"></a>
+                    <a href="#"><img src="../images/57e7e659Nc723f4a2.jpg"></a>
+                    <a href="#"><img src="../images/57e8884aN4d87d6bc.jpg"></a>
+                </div>
+            </div>
+    </li>     <li class="change_con hide">
+        <div class="mid  clearfix">
+            <a href="#"><img src="../images/57e87700N7a387688.jpg"></a>
+            <a href="#"><img src="../images/57e7e73aN8501982a.jpg"></a>
+            <a href="#"><img src="../images/57e7e70aNe4bc4fac.jpg"></a>
+        </div>
+        <div  class="right  clearfix">
+            <div class="yi">
+                <a href="#"><img src="../images/57e7e689N317a84bf.jpg"></a>
+                <a href="#"><img src="../images/57e7e679Na5fe891e.jpg"></a>
+                <a href="#"><img src="../images/57e7e639N1cf6c0ef.jpg"></a>
+                <a href="#"><img src="../images/57e7e648Nd257bf7b.jpg"></a>
+            </div>
+            <div class="er">
+                <a href="#"><img src="../images/57e7e669Nf7701785.jpg"></a>
+                <a href="#"><img src="../images/57e7e659Nc723f4a2.jpg"></a>
+                <a href="#"><img src="../images/57e8884aN4d87d6bc.jpg"></a>
+            </div>
+        </div>
+    </li>
+    </ul>
+</div>
+<div class="bottom">
+ <a href="#"><img src="../images/57df8420N5c66d23f.jpg"></a>
+ <a href="#"><img src="../images/54bf5db9N91ad71b6.jpg"></a>
+ <a href="#"><img src="../images/57e878e5Nb6ebc98c.png"></a>
+ <a href="#"><img src="../images/57d8e08dN09b0328a.jpg"></a>
+ <a href="#"><img src="../images/5795b807N8d1ea1cc.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57e878e5Nb6ebc98c.png"></a>
+ <a href="#"><img src="../images/57e0dfcfNc94db02c.jpg"></a>
+ <a href="#"><img src="../images/57d65dbbN1cb22fc0.jpg"></a>
+ <a href="#" class="active"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+</div>
+</div>
+<div class="page4" id="2F">
+<div class="title  clearfix">
+ <span>2F</span><h2>服装鞋包</h2>
+ <ul class="nav">
+  <li class="active"><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a></li>
+ </ul>
+</div>
+<div class="con again">
+  <div class="left  clearfix">
+    <div class="pic"><a href="#"><img src="../images/57e87e9cNd8c7e5c4.jpg"></a></div>
+    <div class="nav1">
+      <ul>
+      <li><a href="#">美妆特卖</a></li>
+      <li><a href="#">个护清洁</a></li>
+      <li><a href="#">美妆商城</a></li>
+      <li><a href="#">官方直售</a></li>
+      </ul>
+    
+    </div>
+    <div class="nav2 active">
+    <p><a href="#">出游装备超低秒杀></a></p>
+    <p><a href="#">洁净动力 满199减100></a></p>
+    <ul>
+    <li><a href="#"><span>国际馆</span></a></li>
+    <li><a href="#">面膜馆</a></li>
+    <li><a href="#">全球购馆</a></li>
+    <li><a href="#">洗护馆</a></li>
+    <li><a href="#"><span>清洁馆</span></a></li>
+    <li><a href="#">纸品馆</a></li>
+    </ul>
+    
+    </div>
+  
+  </div>
+  <div class="zhong  clearfix">
+    <a href="#"><img src="../images/57e24b29N9be2cb5b.jpg"></a>
+    <a href="#"><img src="../images/57e8df59Na6c44b79.jpg"></a>
+  </div>
+  <div class="hou clearfix">
+  <a href="#"><img src="../images/57e9ccdbN2f799fb4.jpg"></a>
+  <a href="#"><img src="../images/57e889b9Nfa6a653b.jpg"></a>
+  <a href="#"><img src="../images/57c6a627N1cb4736a.jpg"></a>
+  <a href="#"><img src="../images/57ea442aN7615785f.jpg"></a>
+  <a href="#"><img src="../images/57e893e5N3ff9cb8f.jpg"></a>
+  <a href="#"><img src="../images/57ea442aN7615785f.jpg"></a>
+  </div>
+</div>
+<div class="bottom">
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57e878e5Nb6ebc98c.png"></a>
+ <a href="#"><img src="../images/57d8e08dN09b0328a.jpg"></a>
+ <a href="#"><img src="../images/57e0dfcfNc94db02c.jpg"></a>
+ <a href="#"><img src="../images/57d65dbbN1cb22fc0.jpg"></a>
+ <a href="#"><img src="../images/57d7cc1aN4cb36078.png"></a>
+ <a href="#"><img src="../images/57e0dfcfNc94db02c.jpg"></a>
+ <a href="#"><img src="../images/57d65dbbN1cb22fc0.jpg"></a>
+ <a href="#" class="active"><img src="../images/57d7cc1aN4cb36078.png"></a>
+</div>
+</div>
+<div class="advertise">
+<a href="#"><img src="../images/57e4f6d6N168cbbcf.jpg"></a>
+<a href="#"><img src="../images/57e4f6d6N168cbbcf.jpg"></a>
+<a href="#"><img src="../images/57e4f6d6N168cbbcf.jpg"></a>
+</div>
+<div class="page4" id="3F">
+<div class="title  clearfix">
+ <span>3F</span><h2>服装鞋包</h2>
+ <ul class="nav">
+  <li class="active"><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a></li>
+ </ul>
+</div>
+<div class="content clearfix">
+    <div class="clearfix">
+      <div class="left">
+        <div class="pic"><a href="#"><img src="../images/57e9dff5N6124e1fa.jpg"></a></div>
+        <div class="phone">
+          <ul>
+          <li><a href="#">手机</a></li>
+          <li><a href="#">营业厅</a></li>
+          <li><a href="#">配件</a></li>
+          </ul>
+        </div>
+        <div class="clos">
+        <ul class="motoz">
+        <li class="mot"><a href="#">MoToZ享24期免息></a></li>
+        <li class="mot"><a href="#">MoToZ享24期免息></a></li>
+        <li><a href="#">MoToZ享24期免息></a></li>
+        <li><a href="#">MoToZ享24期免息></a></li>
+        </ul>
+          <ul class="one">
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          </ul>
+          <ul class="two">
+          <li><a href="#">精品特惠</a></li>
+          <li><a href="#">iphone7现货</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          </ul>
+        
+        
+        
+        </div>
+      
+      </div>
+      <div class="center">
+        <a href="#"><img src="../images/57ea61deN29d320cf.jpg"></a>
+        <a href="#" class="zuo"><img src="../images/57e8db30Ne9d10093.jpg"></a>
+        <a href="#" class="you"><img src="../images/57e8e373N43ecb546.jpg"></a>
+      </div>
+      <div class="rong">
+      <a href="#"><img src="../images/57ea00faN81c54c8b.jpg"></a>
+      <a href="#"><img src="../images/57ea02e2N717c217e.jpg"></a>
+      <a href="#"><img src="../images/57ea0240N4a6b7fc9.jpg"></a>
+      <a href="#"><img src="../images/57ea00faN81c54c8b.jpg"></a>
+      <a href="#"><img src="../images/57e9ee30N48997c1b.jpg"></a>
+      <a href="#"><img src="../images/57e9ee30N48997c1b.jpg"></a>
+    </div>
+    </div>
+<div class="bottom">
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57e878e5Nb6ebc98c.png"></a>
+ <a href="#"><img src="../images/57d8e08dN09b0328a.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#" class="active"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+</div>
+
+
+
+</div>
+</div>
+<div class="page4" id="4F">
+<div class="title  clearfix">
+ <span>4F</span><h2>服装鞋包</h2>
+ <ul class="nav">
+  <li class="active"><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a></li>
+ </ul>
+</div>
+<div class="content clearfix">
+    <div class="clearfix">
+      <div class="left">
+        <div class="pic"><a href="#"><img src="../images/57e9dff5N6124e1fa.jpg"></a></div>
+        <div class="phone">
+          <ul>
+          <li><a href="#">手机</a></li>
+          <li><a href="#">营业厅</a></li>
+          <li><a href="#">配件</a></li>
+          </ul>
+        </div>
+        <div class="clos">
+        <ul class="motoz">
+        <li class="mot"><a href="#">MoToZ享24期免息></a></li>
+        <li class="mot"><a href="#">MoToZ享24期免息></a></li>
+        <li><a href="#">MoToZ享24期免息></a></li>
+        <li><a href="#">MoToZ享24期免息></a></li>
+        </ul>
+          <ul class="one">
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          </ul>
+          <ul class="two">
+          <li><a href="#">精品特惠</a></li>
+          <li><a href="#">iphone7现货</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          </ul>
+        
+        
+        
+        </div>
+      
+      </div>
+      <div class="center">
+        <a href="#"><img src="../images/57ea61deN29d320cf.jpg"></a>
+        <a href="#" class="zuo"><img src="../images/57e8db30Ne9d10093.jpg"></a>
+        <a href="#" class="you"><img src="../images/57e8e373N43ecb546.jpg"></a>
+      </div>
+      <div class="rong">
+      <a href="#"><img src="../images/57ea00faN81c54c8b.jpg"></a>
+      <a href="#"><img src="../images/57ea02e2N717c217e.jpg"></a>
+      <a href="#"><img src="../images/57ea0240N4a6b7fc9.jpg"></a>
+      <a href="#"><img src="../images/57ea00faN81c54c8b.jpg"></a>
+      <a href="#"><img src="../images/57e9ee30N48997c1b.jpg"></a>
+      <a href="#"><img src="../images/57e9ee30N48997c1b.jpg"></a>
+    </div>
+    </div>
+<div class="bottom">
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57e878e5Nb6ebc98c.png"></a>
+ <a href="#"><img src="../images/57d8e08dN09b0328a.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#" class="active"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+</div>
+
+
+
+</div>
+</div>
+<div class="page4" id="5F">
+<div class="title  clearfix">
+ <span>5F</span><h2>服装鞋包</h2>
+ <ul class="nav">
+  <li class="active"><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a></li>
+ </ul>
+</div>
+<div class="content clearfix">
+    <div class="clearfix">
+      <div class="left">
+        <div class="pic"><a href="#"><img src="../images/57e9dff5N6124e1fa.jpg"></a></div>
+        <div class="phone">
+          <ul>
+          <li><a href="#">手机</a></li>
+          <li><a href="#">营业厅</a></li>
+          <li><a href="#">配件</a></li>
+          </ul>
+        </div>
+        <div class="clos">
+        <ul class="motoz">
+        <li class="mot"><a href="#">MoToZ享24期免息></a></li>
+        <li class="mot"><a href="#">MoToZ享24期免息></a></li>
+        <li><a href="#">MoToZ享24期免息></a></li>
+        <li><a href="#">MoToZ享24期免息></a></li>
+        </ul>
+          <ul class="one">
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          </ul>
+          <ul class="two">
+          <li><a href="#">精品特惠</a></li>
+          <li><a href="#">iphone7现货</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          </ul>
+        
+        
+        
+        </div>
+      
+      </div>
+      <div class="center">
+        <a href="#"><img src="../images/57ea61deN29d320cf.jpg"></a>
+        <a href="#" class="zuo"><img src="../images/57e8db30Ne9d10093.jpg"></a>
+        <a href="#" class="you"><img src="../images/57e8e373N43ecb546.jpg"></a>
+      </div>
+      <div class="rong">
+      <a href="#"><img src="../images/57ea00faN81c54c8b.jpg"></a>
+      <a href="#"><img src="../images/57ea02e2N717c217e.jpg"></a>
+      <a href="#"><img src="../images/57ea0240N4a6b7fc9.jpg"></a>
+      <a href="#"><img src="../images/57ea00faN81c54c8b.jpg"></a>
+      <a href="#"><img src="../images/57e9ee30N48997c1b.jpg"></a>
+      <a href="#"><img src="../images/57e9ee30N48997c1b.jpg"></a>
+    </div>
+    </div>
+<div class="bottom">
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57e878e5Nb6ebc98c.png"></a>
+ <a href="#"><img src="../images/57d8e08dN09b0328a.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#" class="active"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+</div>
+
+
+
+</div>
+</div>
+<div class="advertise">
+<a href="#"><img src="../images/57e4f6d6N168cbbcf.jpg"></a>
+<a href="#"><img src="../images/57e4f6d6N168cbbcf.jpg"></a>
+<a href="#"><img src="../images/57e4f6d6N168cbbcf.jpg"></a>
+</div>
+<div class="page4" id="6F">
+<div class="title  clearfix">
+ <span>6F</span><h2>服装鞋包</h2>
+ <ul class="nav">
+  <li class="active"><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a></li>
+ </ul>
+</div>
+<div class="con again clearfix">
+  <div class="left  clearfix">
+    <div class="pic"><a href="#"><img src="../images/57e87e9cNd8c7e5c4.jpg"></a></div>
+    <div class="nav1">
+      <ul>
+      <li><a href="#">美妆特卖</a></li>
+      <li><a href="#">个护清洁</a></li>
+      <li><a href="#">美妆商城</a></li>
+      <li><a href="#">官方直售</a></li>
+      </ul>
+    
+    </div>
+    <div class="nav2 active">
+    <p><a href="#">出游装备超低秒杀></a></p>
+    <p><a href="#">洁净动力 满199减100></a></p>
+    <ul>
+    <li><a href="#"><span>国际馆</span></a></li>
+    <li><a href="#">面膜馆</a></li>
+    <li><a href="#">全球购馆</a></li>
+    <li><a href="#">洗护馆</a></li>
+    <li><a href="#"><span>清洁馆</span></a></li>
+    <li><a href="#">纸品馆</a></li>
+    </ul>
+    
+    </div>
+  
+  </div>
+  <div class="center clearfix">
+    <div class="bai">
+    <a href="#"><img src="../images/57f07fedN5a648710.jpg"></a>
+    <a href="#" class="active"><img src="../images/57f07ffbN832ca9f2.jpg"></a>
+    </div>
+     <div class="hui">
+    <a href="#"><img src="../images/57f07e60Na5b7e569.jpg"></a>
+    <a href="#"><img src="../images/57f07e6aNc265021c.jpg"></a>
+    </div>
+  </div>
+  <div class="last">
+  <a href="#"><img src="../images/57f07ff4N1254aab7.jpg"></a>
+  <a href="#"><img src="../images/57ee87b7N1248b80a.jpg"></a>
+  <a href="#"><img src="../images/57f08003N63a55f51.jpg"></a>
+  <a href="#"><img src="../images/57f08009N6094bf8f.jpg"></a>
+  </div>
+</div>
+<div class="bottom">
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57e878e5Nb6ebc98c.png"></a>
+ <a href="#"><img src="../images/57d8e08dN09b0328a.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#" class="active"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+</div>
+</div>
+<div class="page4" id="7F">
+<div class="title  clearfix">
+ <span>7F</span><h2>服装鞋包</h2>
+ <ul class="nav">
+  <li class="active"><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a></li>
+ </ul>
+</div>
+<div class="con again clearfix">
+  <div class="left  clearfix">
+    <div class="pic"><a href="#"><img src="../images/57e87e9cNd8c7e5c4.jpg"></a></div>
+    <div class="nav1">
+      <ul>
+      <li><a href="#">美妆特卖</a></li>
+      <li><a href="#">个护清洁</a></li>
+      <li><a href="#">美妆商城</a></li>
+      <li><a href="#">官方直售</a></li>
+      </ul>
+    
+    </div>
+    <div class="nav2 active">
+    <p><a href="#">出游装备超低秒杀></a></p>
+    <p><a href="#">洁净动力 满199减100></a></p>
+    <ul>
+    <li><a href="#"><span>国际馆</span></a></li>
+    <li><a href="#">面膜馆</a></li>
+    <li><a href="#">全球购馆</a></li>
+    <li><a href="#">洗护馆</a></li>
+    <li><a href="#"><span>清洁馆</span></a></li>
+    <li><a href="#">纸品馆</a></li>
+    </ul>
+    
+    </div>
+  
+  </div>
+  <div class="center clearfix">
+    <div class="bai">
+    <a href="#"><img src="../images/57f07fedN5a648710.jpg"></a>
+    <a href="#" class="active"><img src="../images/57f07ffbN832ca9f2.jpg"></a>
+    </div>
+     <div class="hui">
+    <a href="#"><img src="../images/57f07e60Na5b7e569.jpg"></a>
+    <a href="#"><img src="../images/57f07e6aNc265021c.jpg"></a>
+    </div>
+  </div>
+  <div class="last">
+  <a href="#"><img src="../images/57f07ff4N1254aab7.jpg"></a>
+  <a href="#"><img src="../images/57ee87b7N1248b80a.jpg"></a>
+  <a href="#"><img src="../images/57f08003N63a55f51.jpg"></a>
+  <a href="#"><img src="../images/57f08009N6094bf8f.jpg"></a>
+  </div>
+</div>
+<div class="bottom">
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57e878e5Nb6ebc98c.png"></a>
+ <a href="#"><img src="../images/57d8e08dN09b0328a.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#" class="active"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+</div>
+</div>
+<div class="page4" id="8F">
+<div class="title  clearfix">
+ <span>8F</span><h2>服装鞋包</h2>
+ <ul class="nav">
+  <li class="active"><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a></li>
+ </ul>
+</div>
+<div class="con again clearfix">
+  <div class="left  clearfix">
+    <div class="pic"><a href="#"><img src="../images/57e87e9cNd8c7e5c4.jpg"></a></div>
+    <div class="nav1">
+      <ul>
+      <li><a href="#">美妆特卖</a></li>
+      <li><a href="#">个护清洁</a></li>
+      <li><a href="#">美妆商城</a></li>
+      <li><a href="#">官方直售</a></li>
+      </ul>
+    
+    </div>
+    <div class="nav2 active">
+    <p><a href="#">出游装备超低秒杀></a></p>
+    <p><a href="#">洁净动力 满199减100></a></p>
+    <ul>
+    <li><a href="#"><span>国际馆</span></a></li>
+    <li><a href="#">面膜馆</a></li>
+    <li><a href="#">全球购馆</a></li>
+    <li><a href="#">洗护馆</a></li>
+    <li><a href="#"><span>清洁馆</span></a></li>
+    <li><a href="#">纸品馆</a></li>
+    </ul>
+    
+    </div>
+  
+  </div>
+  <div class="center clearfix">
+    <div class="bai">
+    <a href="#"><img src="../images/57f07fedN5a648710.jpg"></a>
+    <a href="#" class="active"><img src="../images/57f07ffbN832ca9f2.jpg"></a>
+    </div>
+     <div class="hui">
+    <a href="#"><img src="../images/57f07e60Na5b7e569.jpg"></a>
+    <a href="#"><img src="../images/57f07e6aNc265021c.jpg"></a>
+    </div>
+  </div>
+  <div class="last">
+  <a href="#"><img src="../images/57f07ff4N1254aab7.jpg"></a>
+  <a href="#"><img src="../images/57ee87b7N1248b80a.jpg"></a>
+  <a href="#"><img src="../images/57f08003N63a55f51.jpg"></a>
+  <a href="#"><img src="../images/57f08009N6094bf8f.jpg"></a>
+  </div>
+</div>
+<div class="bottom">
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57e878e5Nb6ebc98c.png"></a>
+ <a href="#"><img src="../images/57d8e08dN09b0328a.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#" class="active"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+</div>
+</div>
+<div class="page4" id="9F">
+<div class="title  clearfix">
+ <span>9F</span><h2>服装鞋包</h2>
+ <ul class="nav">
+  <li class="active"><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a></li>
+ </ul>
+</div>
+<div class="con again clearfix">
+  <div class="left  clearfix">
+    <div class="pic"><a href="#"><img src="../images/57e87e9cNd8c7e5c4.jpg"></a></div>
+    <div class="nav1">
+      <ul>
+      <li><a href="#">美妆特卖</a></li>
+      <li><a href="#">个护清洁</a></li>
+      <li><a href="#">美妆商城</a></li>
+      <li><a href="#">官方直售</a></li>
+      </ul>
+    
+    </div>
+    <div class="nav2 active">
+    <p><a href="#">出游装备超低秒杀></a></p>
+    <p><a href="#">洁净动力 满199减100></a></p>
+    <ul>
+    <li><a href="#"><span>国际馆</span></a></li>
+    <li><a href="#">面膜馆</a></li>
+    <li><a href="#">全球购馆</a></li>
+    <li><a href="#">洗护馆</a></li>
+    <li><a href="#"><span>清洁馆</span></a></li>
+    <li><a href="#">纸品馆</a></li>
+    </ul>
+    
+    </div>
+  
+  </div>
+  <div class="center clearfix">
+    <div class="bai">
+    <a href="#"><img src="../images/57f07fedN5a648710.jpg"></a>
+    <a href="#" class="active"><img src="../images/57f07ffbN832ca9f2.jpg"></a>
+    </div>
+     <div class="hui">
+    <a href="#"><img src="../images/57f07e60Na5b7e569.jpg"></a>
+    <a href="#"><img src="../images/57f07e6aNc265021c.jpg"></a>
+    </div>
+  </div>
+  <div class="last">
+  <a href="#"><img src="../images/57f07ff4N1254aab7.jpg"></a>
+  <a href="#"><img src="../images/57ee87b7N1248b80a.jpg"></a>
+  <a href="#"><img src="../images/57f08003N63a55f51.jpg"></a>
+  <a href="#"><img src="../images/57f08009N6094bf8f.jpg"></a>
+  </div>
+</div>
+<div class="bottom">
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57e878e5Nb6ebc98c.png"></a>
+ <a href="#"><img src="../images/57d8e08dN09b0328a.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#" class="active"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+</div>
+</div>
+<div class="advertise">
+<a href="#"><img src="../images/57e4f6d6N168cbbcf.jpg"></a>
+<a href="#"><img src="../images/57e4f6d6N168cbbcf.jpg"></a>
+<a href="#"><img src="../images/57e4f6d6N168cbbcf.jpg"></a>
+</div>
+<div class="page4" id="10F">
+<div class="title  clearfix">
+ <span>10F</span><h2>服装鞋包</h2>
+ <ul class="nav">
+  <li class="active"><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a></li>
+ </ul>
+</div>
+<div class="con again clearfix">
+  <div class="left  clearfix">
+    <div class="pic"><a href="#"><img src="../images/57e87e9cNd8c7e5c4.jpg"></a></div>
+    <div class="nav1">
+      <ul>
+      <li><a href="#">美妆特卖</a></li>
+      <li><a href="#">个护清洁</a></li>
+      <li><a href="#">美妆商城</a></li>
+      <li><a href="#">官方直售</a></li>
+      </ul>
+    
+    </div>
+    <div class="nav2 active">
+    <p><a href="#">出游装备超低秒杀></a></p>
+    <p><a href="#">洁净动力 满199减100></a></p>
+    <ul>
+    <li><a href="#"><span>国际馆</span></a></li>
+    <li><a href="#">面膜馆</a></li>
+    <li><a href="#">全球购馆</a></li>
+    <li><a href="#">洗护馆</a></li>
+    <li><a href="#"><span>清洁馆</span></a></li>
+    <li><a href="#">纸品馆</a></li>
+    </ul>
+    
+    </div>
+  
+  </div>
+  <div class="center clearfix">
+    <div class="bai">
+    <a href="#"><img src="../images/57f07fedN5a648710.jpg"></a>
+    <a href="#" class="active"><img src="../images/57f07ffbN832ca9f2.jpg"></a>
+    </div>
+          <div class="guo">
+        <a href="#"><img src="../images/57ea61deN29d320cf.jpg"></a>
+      <a href="#" class="zuo"><img src="../images/57e8db30Ne9d10093.jpg"></a>
+ <a href="#" class="you"><img src="../images/57e8e373N43ecb546.jpg"></a>
+      
+      </div>
+  </div>
+  <div class="author clearfix">
+    <dl>
+     <dt>热门作者</dt>
+     <dd class="book">
+       <div class="liu">
+       <a href="#" title="刘同"><img src="../images/57182721N8c58eb38.jpg">
+        <p title="刘同">刘同</p>
+       </a>
+       </div>
+      <div class="tong">
+     <a href="#" title="向着光亮那方·谁的青春不迷茫系列之三（京东随机赠送电影《谁的青春不迷茫》刘同亲历手记）"><img src="../images/56efcbd2N4b90aae3.jpg">
+       <p title="向着光亮那方·谁的青春不迷茫系列之三（京东随机赠送电影《谁的青春不迷茫》刘同亲历手记）">向着光亮那方·谁的青春</p>
+      </a>
+       <span><i>“</i>刘同2016全新作品。<i>”</i></span>
+      </div>
+     
+     
+     
+     </dd>
+          <dd class="book">
+       <div class="liu">
+       <a href="#" title="刘同"><img src="../images/57182721N8c58eb38.jpg">
+        <p title="刘同">刘同</p>
+       </a>
+       </div>
+      <div class="tong">
+     <a href="#" title="向着光亮那方·谁的青春不迷茫系列之三（京东随机赠送电影《谁的青春不迷茫》刘同亲历手记）"><img src="../images/56efcbd2N4b90aae3.jpg">
+       <p title="向着光亮那方·谁的青春不迷茫系列之三（京东随机赠送电影《谁的青春不迷茫》刘同亲历手记）">向着光亮那方·谁的青春</p>
+      </a>
+       <span><i>“</i>刘同2016全新作品。<i>”</i></span>
+      </div>
+     
+     
+     
+     </dd>
+     <dd class="book">
+       <div class="liu">
+       <a href="#" title="刘同"><img src="../images/57182721N8c58eb38.jpg">
+        <p title="刘同">刘同</p>
+       </a>
+       </div>
+      <div class="tong">
+     <a href="#" title="向着光亮那方·谁的青春不迷茫系列之三（京东随机赠送电影《谁的青春不迷茫》刘同亲历手记）"><img src="../images/56efcbd2N4b90aae3.jpg">
+       <p title="向着光亮那方·谁的青春不迷茫系列之三（京东随机赠送电影《谁的青春不迷茫》刘同亲历手记）">向着光亮那方·谁的青春</p>
+      </a>
+       <span><i>“</i>刘同2016全新作品。<i>”</i></span>
+      </div>
+     
+     
+     
+     </dd>
+     <dd class="book">
+       <div class="liu">
+       <a href="#" title="刘同"><img src="../images/57182721N8c58eb38.jpg">
+        <p title="刘同">刘同</p>
+       </a>
+       </div>
+      <div class="tong">
+     <a href="#" title="向着光亮那方·谁的青春不迷茫系列之三（京东随机赠送电影《谁的青春不迷茫》刘同亲历手记）"><img src="../images/56efcbd2N4b90aae3.jpg">
+       <p title="向着光亮那方·谁的青春不迷茫系列之三（京东随机赠送电影《谁的青春不迷茫》刘同亲历手记）">向着光亮那方·谁的青春</p>
+      </a>
+       <span><i>“</i>刘同2016全新作品。<i>”</i></span>
+      </div>
+     
+     
+     
+     </dd>
+
+    </dl>
+  </div>
+</div>
+<div class="bottom">
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57e878e5Nb6ebc98c.png"></a>
+ <a href="#"><img src="../images/57d8e08dN09b0328a.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#" class="active"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+</div>
+</div>
+<div class="page4" id="11F">
+<div class="title  clearfix">
+ <span>11F</span><h2>服装鞋包</h2>
+ <ul class="nav">
+  <li class="active"><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a><i></i></li>
+  <li><a href="#">大牌</a></li>
+ </ul>
+</div>
+<div class="content clearfix">
+    <div class="clearfix">
+      <div class="left">
+        <div class="pic"><a href="#"><img src="../images/57e9dff5N6124e1fa.jpg"></a></div>
+        <div class="phone">
+          <ul>
+          <li><a href="#">手机</a></li>
+          <li><a href="#">营业厅</a></li>
+          <li><a href="#">配件</a></li>
+          </ul>
+        </div>
+        <div class="clos">
+        <ul class="motoz">
+        <li class="mot"><a href="#">MoToZ享24期免息></a></li>
+        <li class="mot"><a href="#">MoToZ享24期免息></a></li>
+        <li><a href="#">MoToZ享24期免息></a></li>
+        <li><a href="#">MoToZ享24期免息></a></li>
+        </ul>
+          <ul class="one">
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          </ul>
+          <ul class="two">
+          <li><a href="#">精品特惠</a></li>
+          <li><a href="#">iphone7现货</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          <li><a href="#">手机通讯</a></li>
+          <li><a href="#">以旧换新</a></li>
+          </ul>
+        
+        
+        
+        </div>
+      
+      </div>
+      <div class="center">
+        <a href="#"><img src="../images/57ea61deN29d320cf.jpg"></a>
+        <a href="#" class="zuo"><img src="../images/57e8db30Ne9d10093.jpg"></a>
+        <a href="#" class="you"><img src="../images/57e8e373N43ecb546.jpg"></a>
+      </div>
+      <div class="rong">
+      <a href="#"><img src="../images/57ea00faN81c54c8b.jpg"></a>
+      <a href="#"><img src="../images/57ea02e2N717c217e.jpg"></a>
+      <a href="#"><img src="../images/57ea0240N4a6b7fc9.jpg"></a>
+      <a href="#"><img src="../images/57ea00faN81c54c8b.jpg"></a>
+      <a href="#"><img src="../images/57e9ee30N48997c1b.jpg"></a>
+      <a href="#"><img src="../images/57e9ee30N48997c1b.jpg"></a>
+    </div>
+    </div>
+<div class="bottom">
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57e878e5Nb6ebc98c.png"></a>
+ <a href="#"><img src="../images/57d8e08dN09b0328a.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#" class="active"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+</div>
+
+
+
+</div>
+</div>
+<div class="page4" id="12F">
+<div class="title tit clearfix">
+ <span>12F</span><h2>服装鞋包</h2>
+</div>
+<div class="con again clearfix">
+  <div class="left  clearfix">
+    <div class="pic"><a href="#"><img src="../images/57e87e9cNd8c7e5c4.jpg"></a></div>
+    <div class="nav1">
+      <ul>
+      <li><a href="#">美妆特卖</a></li>
+      <li><a href="#">个护清洁</a></li>
+      <li><a href="#">美妆商城</a></li>
+      <li><a href="#">官方直售</a></li>
+      </ul>
+    
+    </div>
+    <div class="nav2 active">
+    <p><a href="#">出游装备超低秒杀></a></p>
+    <p><a href="#">洁净动力 满199减100></a></p>
+    <ul>
+    <li><a href="#"><span>国际馆</span></a></li>
+    <li><a href="#">面膜馆</a></li>
+    <li><a href="#">全球购馆</a></li>
+    <li><a href="#">洗护馆</a></li>
+    <li><a href="#"><span>清洁馆</span></a></li>
+    <li><a href="#">纸品馆</a></li>
+    </ul>
+    
+    </div>
+  
+  </div>
+  <div class="center clearfix">
+          <div class="le">
+        <a href="#"><img src="../images/57ec684cN4db7bb4d.jpg"></a>
+      <a href="#" class="zuo"><img src="../images/57eb6455Ncb3ddb74.jpg"><img src="../images/57ee2a35N7edbc5e2.jpg"></a>
+ <a href="#" class="you"><img src="../images/57eb6455Ncb3ddb74.jpg"><img src="../images/57ee2a35N7edbc5e2.jpg"></a>
+      
+      </div>
+  </div>
+   <div class="left  clearfix">
+    <div class="pic"><a href="#"><img src="../images/57e87e9cNd8c7e5c4.jpg"></a></div>
+    <div class="nav1">
+      <ul>
+      <li><a href="#">美妆特卖</a></li>
+      <li><a href="#">个护清洁</a></li>
+      <li><a href="#">美妆商城</a></li>
+      <li><a href="#">官方直售</a></li>
+      </ul>
+    
+    </div>
+    <div class="nav2 active">
+    <p><a href="#">出游装备超低秒杀></a></p>
+    <p><a href="#">洁净动力 满199减100></a></p>
+    <ul>
+    <li><a href="#"><span>国际馆</span></a></li>
+    <li><a href="#">面膜馆</a></li>
+    <li><a href="#">全球购馆</a></li>
+    <li><a href="#">洗护馆</a></li>
+    <li><a href="#"><span>清洁馆</span></a></li>
+    <li><a href="#">纸品馆</a></li>
+    </ul>
+    
+    </div>
+  
+  </div>
+  <div class="center clearfix">
+          <div class="le">
+        <a href="#"><img src="../images/57ec684cN4db7bb4d.jpg"></a>
+      <a href="#" class="zuo"><img src="../images/57eb6455Ncb3ddb74.jpg"><img src="../images/57ee2a35N7edbc5e2.jpg"></a>
+ <a href="#" class="you"><img src="../images/57eb6455Ncb3ddb74.jpg"><img src="../images/57ee2a35N7edbc5e2.jpg"></a>
+      
+      </div>
+  </div>
+ 
+  
+  
+</div>
+<div class="bottom">
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57e878e5Nb6ebc98c.png"></a>
+ <a href="#"><img src="../images/57d8e08dN09b0328a.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+ <a href="#" class="active"><img src="../images/57d8e032N3adc4e06.jpg"></a>
+</div>
+</div>
+<div class="page5 clearfix">
+  <div class="inner">
+<div class="everday">
+<div class="title"><h2>天天特价</h2></div>
+<div class="left clearfix">
+ <div class="left1">
+ <div class="pic"><a href="#"><img src="../images/57f1047aN035e8cd7.jpg"></a></div>
+ <a href="#"><p title="阿美娜2016秋季新款韩版 连帽兔耳口袋印花长袖">阿美娜2016秋季新款韩版 连帽兔耳</p></a>
+ <span>¥100.00</span>
+</div>
+<div class="right">
+<div class="top">
+ <div class="left2">
+ <div class="pic"><a href="#"><img src="../images/57f103edN72be0d51.jpg"></a></div>
+  <div class="wenzi">
+ <p title="阿美娜2016秋季新款韩版 连帽兔耳口袋印花长袖"><a href="#">阿美娜2016秋季新款韩版 连帽兔耳</a><br> <span>¥100.00</span></p>
+</div>
+</div>
+ <div class="left2">
+ <div class="pic"><a href="#"><img src="../images/57f103edN72be0d51.jpg"></a></div>
+  <div class="wenzi">
+ <p title="阿美娜2016秋季新款韩版 连帽兔耳口袋印花长袖"><a href="#">阿美娜2016秋季新款韩版 连帽兔耳</a><br> <span>¥100.00</span></p>
+</div>
+</div>
+ <div class="left2">
+ <div class="pic"><a href="#"><img src="../images/57f103edN72be0d51.jpg"></a></div>
+  <div class="wenzi">
+ <p title="阿美娜2016秋季新款韩版 连帽兔耳口袋印花长袖"><a href="#">阿美娜2016秋季新款韩版 连帽兔耳</a><br> <span>¥100.00</span></p>
+</div>
+</div>
+</div>
+<div class="top">
+ <div class="left2">
+ <div class="pic"><a href="#"><img src="../images/57f103edN72be0d51.jpg"></a></div>
+  <div class="wenzi">
+ <p title="阿美娜2016秋季新款韩版 连帽兔耳口袋印花长袖"><a href="#">阿美娜2016秋季新款韩版 连帽兔耳</a><br> <span>¥100.00</span></p>
+</div>
+</div>
+ <div class="left2">
+ <div class="pic"><a href="#"><img src="../images/57f103edN72be0d51.jpg"></a></div>
+  <div class="wenzi">
+ <p title="阿美娜2016秋季新款韩版 连帽兔耳口袋印花长袖"><a href="#">阿美娜2016秋季新款韩版 连帽兔耳</a><br> <span>¥100.00</span></p>
+</div>
+</div>
+ <div class="left2">
+ <div class="pic"><a href="#"><img src="../images/57f103edN72be0d51.jpg"></a></div>
+  <div class="wenzi">
+ <p title="阿美娜2016秋季新款韩版 连帽兔耳口袋印花长袖"><a href="#">阿美娜2016秋季新款韩版 连帽兔耳</a><br> <span>¥100.00</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="hot">
+<div class="title"><h2>热门晒单</h2></div>
+<div class="computer">
+       <div class="tong">
+     <a href="#"><img src="../images/57ce9204N0c87a889.jpg"></a>
+     <div class="ggg">
+       <div class="fei"><img src="../images/57edca2fNfb078aa1.jpg"><p>灰***</p></div>
+       <span><a href="#"><i>“</i>非常好的电脑虽然只是飞翔版 但......<i>”</i></a></span>
+       </div>
+      </div>
+       <div class="tong hua">
+     <a href="#"><img src="../images/57ce9204N0c87a889.jpg"></a>
+     <div class="ggg">
+       <div class="fei"><img src="../images/57edca2fNfb078aa1.jpg"><p>灰***</p></div>
+       <span><a href="#"><i>“</i>非常好的电脑虽然只是飞翔版 但......<i>”</i></a></span>
+       </div>
+      </div>
+       <div class="tong">
+     <a href="#"><img src="../images/57ce9204N0c87a889.jpg"></a>
+     <div class="ggg">
+       <div class="fei"><img src="../images/57edca2fNfb078aa1.jpg"><p>灰***</p></div>
+       <span><a href="#"><i>“</i>非常好的电脑虽然只是飞翔版 但......<i>”</i></a></span>
+       </div>
+      </div>
+       <div class="tong">
+     <a href="#"><img src="../images/57ce9204N0c87a889.jpg"></a>
+     <div class="ggg">
+       <div class="fei"><img src="../images/57edca2fNfb078aa1.jpg"><p>灰***</p></div>
+       <span><a href="#"><i>“</i>非常好的电脑虽然只是飞翔版 但......<i>”</i></a></span>
+       </div>
+      </div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="page6">
+ <div class="inner">
+ <ul>
+  <li></li>
+  <li class="yi"></li>
+ <li class="er"></li>
+  <li class="san"></li>
+ </ul>
+</div>
+</div>
+<div class="page7">
+ <div class="inner">
+<dl>
+<dt>购物指南</dt>
+<dd><a href="#">购物流程</a></dd>
+<dd><a href="#">会员介绍</a></dd>
+<dd><a href="#">生活旅行/团购</a></dd>
+<dd><a href="#">常见问题</a></dd>
+<dd><a href="#">大家电</a></dd>
+<dd><a href="#">联系客服</a></dd>
+
+</dl>
+<dl>
+<dt>配送方式</dt>
+<dd><a href="#">上门自提</a></dd>
+<dd><a href="#">211限时达</a></dd>
+<dd><a href="#">配送服务查询</a></dd>
+<dd><a href="#">配送费收取标准</a></dd>
+<dd><a href="#">海外配送</a></dd>
+
+</dl>
+<dl>
+<dt>配送方式</dt>
+<dd><a href="#">上门自提</a></dd>
+<dd><a href="#">211限时达</a></dd>
+<dd><a href="#">配送服务查询</a></dd>
+<dd><a href="#">配送费收取标准</a></dd>
+<dd><a href="#">海外配送</a></dd>
+
+</dl>
+<dl>
+<dt>配送方式</dt>
+<dd><a href="#">上门自提</a></dd>
+<dd><a href="#">211限时达</a></dd>
+<dd><a href="#">配送服务查询</a></dd>
+<dd><a href="#">配送费收取标准</a></dd>
+<dd><a href="#">海外配送</a></dd>
+
+</dl>
+<dl>
+<dt>配送方式</dt>
+<dd><a href="#">上门自提</a></dd>
+<dd><a href="#">211限时达</a></dd>
+<dd><a href="#">配送服务查询</a></dd>
+<dd><a href="#">配送费收取标准</a></dd>
+<dd><a href="#">海外配送</a></dd>
+
+</dl>
+<dl>
+<dt>京东自营覆盖区县</dt>
+<dd class="jing">京东已向全国2654个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。<br><a href="#">查看详情 ></a></dd>
+
+</dl>
+</div>
+</div>
+<div class="footer">
+
+ <div class="inner">
+<ul class="guan clearfix">
+<li><a href="#">关于我们</a>
+|
+</li>
+<li><a href="#">关于我们</a>
+|
+</li>
+<li><a href="#">关于我们</a>
+|
+</li>
+<li><a href="#">关于我们</a>
+|
+</li>
+<li><a href="#">关于我们</a>
+|
+</li>
+<li><a href="#">关于我们</a>
+|
+</li>
+
+<li><a href="#">关于我们</a>
+|
+</li>
+<li><a href="#">关于我们</a>
+|
+</li>
+<li><a href="#">关于我们</a>
+|
+</li>
+<li><a href="#">关于我们</a>
+|
+</li>
+<li><a href="#">关于我们</a>
+|
+</li>
+<li><a href="#">关于我们</a>
+|
+</li>
+</ul>
+<ul class="yu">
+<li><a href="#" class="wang">京公网安备11000002000088号</a>
+|
+</li>
+<li>京ICP证070359号
+|
+</li>
+<li><a href="#">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+|
+</li>
+
+<li>新出发京零 字第大120007号<br></li>
+<li>互联网出版许可证编号新出网证(京)字150号
+|
+</li>
+<li><a href="#">出版物经营许可证</a>
+|
+</li>
+<li><a href="#">网络文化经营许可证京网文[2014]2148-348号</a>
+|
+</li>
+<li>违法和不良信息举报电话：4006561155<br></li>
+<li>Copyright ? 2004 - 2016 京东JD.com 版权所有
+|
+</li>
+<li>消费者维权热线：4006067733<br></li>
+<li>京东旗下网站：<a href="#">京东钱包</a></li>
+</ul>
+<ul class="ying">
+<li><a href="#"><img src="../images/54b8871eNa9a7067e.png"></a></li>
+<li><a href="#"><img src="../images/56a89b8fNfbaade9a.jpg"></a></li>
+<li><a href="#"><img src="../images/54b8871eNa9a7067e.png"></a></li>
+<li><a href="#"><img src="../images/54b8871eNa9a7067e.png"></a></li>
+<li><a href="#"><img src="../images/54b8872dNe37a9860.png"></a></li>
+<li><a href="#"><img src="../images/54b8875fNad1e0c4c.png"></a></li>
+</ul>
+
+
+
+
+
+</div>
+</div>
+<div class="jd">
+<ul>
+	<li class="active"><a href="#1F">服饰</a>
+    <span>1F</span>
+    </li>
+	<li><a href="#2F">美妆</a>
+    <span>2F</span>
+    </li>
+	<li><a href="#3F">手机</a>
+    <span>3F</span>
+    </li>
+	<li><a href="#4F">运动</a>
+    <span>4F</span>
+    </li>
+    	<li><a href="#5F">运动</a>
+    <span>5F</span>
+    </li>
+	<li><a href="#6F">运动</a>
+    <span>6F</span>
+    </li>
+	<li><a href="#7F">运动</a>
+    <span>7F</span>
+    </li>
+	<li><a href="#8F">运动</a>
+    <span>8F</span>
+    </li>
+	<li><a href="#9F">运动</a>
+    <span>9F</span>
+    </li>
+	<li><a href="#10F">运动</a>
+    <span>10F</span>
+    </li>
+	<li><a href="#11F">运动</a>
+    <span>11F</span>
+    </li>
+	<li><a href="#12F">运动</a>
+    <span>12F</span>
+    </li>
+
+</ul>
+</div>
+
+</body>
+</html>
